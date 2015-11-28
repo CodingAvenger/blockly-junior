@@ -2,8 +2,9 @@
 
 Here you can find some icons that can be used in [Blockly](https://developers.google.com/blockly/), the web-based, graphical programming editor.
 
-The purpose of these icons is making Blockly more easy for young children that have not learned to read yet (3-5 year-olds), converting it to something similar to [ScratchJr] (http://www.scratchjr.org/), which is a simpler version of [Scratch] (https://scratch.mit.edu/).
-![](https://raw.githubusercontent.com/oestape/blockly/master/img/sample.png)
+The purpose of these icons is making Blockly more easy for young children that have not learned to read yet (3-5 year-olds). It is similar to [ScratchJr] (http://www.scratchjr.org/), which is a simpler version of [Scratch] (https://scratch.mit.edu/).
+
+![](https://raw.githubusercontent.com/oestape/blockly/master/demos/junior/icon.png)
 
 Left to Right programming (ScratchJr)
 * [Right arrow] (https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#5xzf5x)

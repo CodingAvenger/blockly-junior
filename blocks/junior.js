@@ -15,7 +15,7 @@ Blockly.Blocks['right'] = {
         .appendField(new Blockly.FieldImage("../../img/jr_arrow_right.png", 32, 32, "right"));
     this.setPreviousStatement(true, "JUNIOR");
     this.setNextStatement(true, "JUNIOR");
-    this.setColour(180);
+    this.setColour(195);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
@@ -27,7 +27,7 @@ Blockly.Blocks['left'] = {
         .appendField(new Blockly.FieldImage("../../img/jr_arrow_left.png", 32, 32, "left"));
     this.setPreviousStatement(true, "JUNIOR");
     this.setNextStatement(true, "JUNIOR");
-    this.setColour(180);
+    this.setColour(195);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
@@ -39,7 +39,7 @@ Blockly.Blocks['up'] = {
         .appendField(new Blockly.FieldImage("../../img//jr_arrow_up.png", 32, 32, "up"));
     this.setPreviousStatement(true, "JUNIOR");
     this.setNextStatement(true, "JUNIOR");
-    this.setColour(180);
+    this.setColour(195);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
@@ -51,7 +51,7 @@ Blockly.Blocks['down'] = {
         .appendField(new Blockly.FieldImage("../../img/jr_arrow_down.png", 32, 32, "down"));
     this.setPreviousStatement(true, "JUNIOR");
     this.setNextStatement(true, "JUNIOR");
-    this.setColour(180);
+    this.setColour(195);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
@@ -63,7 +63,7 @@ Blockly.Blocks['turn_right'] = {
         .appendField(new Blockly.FieldImage("../../img/jr_turn_right.png", 32, 32, "turn_right"));
     this.setPreviousStatement(true, "JUNIOR");
     this.setNextStatement(true, "JUNIOR");
-    this.setColour(180);
+    this.setColour(195);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
@@ -75,7 +75,7 @@ Blockly.Blocks['turn_left'] = {
         .appendField(new Blockly.FieldImage("../../img/jr_turn_left.png", 32, 32, "turn_left"));
     this.setPreviousStatement(true, "JUNIOR");
     this.setNextStatement(true, "JUNIOR");
-    this.setColour(180);
+    this.setColour(195);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
@@ -102,7 +102,7 @@ Blockly.Blocks['right_r'] = {
     this.setInputsInline(false);
     this.setPreviousStatement(true, "JUNIOR");
     this.setNextStatement(true, "JUNIOR");
-    this.setColour(180);
+    this.setColour(195);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
@@ -117,7 +117,7 @@ Blockly.Blocks['left_r'] = {
     this.setInputsInline(false);
     this.setPreviousStatement(true, "JUNIOR");
     this.setNextStatement(true, "JUNIOR");
-    this.setColour(180);
+    this.setColour(195);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
@@ -132,7 +132,7 @@ Blockly.Blocks['up_r'] = {
     this.setInputsInline(false);
     this.setPreviousStatement(true, "JUNIOR");
     this.setNextStatement(true, "JUNIOR");
-    this.setColour(180);
+    this.setColour(195);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
@@ -147,7 +147,7 @@ Blockly.Blocks['down_r'] = {
     this.setInputsInline(false);
     this.setPreviousStatement(true, "JUNIOR");
     this.setNextStatement(true, "JUNIOR");
-    this.setColour(180);
+    this.setColour(195);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
@@ -162,7 +162,7 @@ Blockly.Blocks['turn_right_r'] = {
     this.setInputsInline(false);
     this.setPreviousStatement(true, "JUNIOR");
     this.setNextStatement(true, "JUNIOR");
-    this.setColour(180);
+    this.setColour(195);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
@@ -177,7 +177,7 @@ Blockly.Blocks['turn_left_r'] = {
     this.setInputsInline(false);
     this.setPreviousStatement(true, "JUNIOR");
     this.setNextStatement(true, "JUNIOR");
-    this.setColour(180);
+    this.setColour(195);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
