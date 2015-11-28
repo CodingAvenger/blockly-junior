@@ -16,6 +16,12 @@ Top-Down programming
 * [Green flag] (https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#hms3ru)
 * [Right arrow] https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#x9ho2n
 
+With repeat  (select 1-10)
+* https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#g9jgcy
+
+Repeat with parameter
+* https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#rovtvq
+
 # Blockly
 
 Google's Blockly is a web-based, visual programming editor.  Users can drag
