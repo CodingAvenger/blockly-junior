@@ -37,12 +37,14 @@
 
   <xml id="toolbox" style="display: none">
     <category name="Junior">
+        <block type="green_flag"></block>
         <block type="right"></block>
         <block type="left"></block>
         <block type="up"></block>
         <block type="down"></block>
         <block type="turn_right"></block>
         <block type="turn_left"></block>
+        <block type="end"></block>
     </category>
     <category name="Logic">
       <category name="If">
@@ -361,7 +363,6 @@
    <script>
     var workspace = Blockly.inject('blocklyDiv',
         {media: '../../media/',
-		 rtl: true,
          toolbox: document.getElementById('toolbox')});
     Blockly.Xml.domToWorkspace(workspace,
         document.getElementById('startBlocks'));
