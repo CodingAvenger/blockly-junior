@@ -92,6 +92,27 @@ Blockly.Blocks['end'] = {
   }
 };
 
+Blockly.Blocks['stop'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldImage("../../img/jr_stop7.png", 32, 32, "stop"));
+    this.setPreviousStatement(true, "JUNIOR");
+    this.setColour(0);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
+
+Blockly.Blocks['repeat'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldImage("../../img/jr_repeat.png", 32, 32, "repeat"));
+    this.setPreviousStatement(true, "JUNIOR");
+    this.setColour(0);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
 
 Blockly.Blocks['right_r'] = {
   init: function() {
@@ -360,6 +381,38 @@ Blockly.Blocks['dice_6'] = {
         .appendField(new Blockly.FieldImage("../../img/jr-dice-6.png", 32, 32, "1"));
     this.setOutput(true, "Number");
     this.setColour(270);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
+
+Blockly.Blocks['plus'] = {
+  init: function() {
+    this.appendValueInput("FIRST")
+        .setCheck("Number");
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldImage("../../img/jr_plus.png", 32, 32, "*"));
+    this.appendValueInput("SECOND")
+        .setCheck("Number");
+    this.setInputsInline(true);
+    this.setOutput(true, "Number");
+    this.setColour(225);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
+
+Blockly.Blocks['minus'] = {
+  init: function() {
+    this.appendValueInput("FIRST")
+        .setCheck("Number");
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldImage("../../img/jr_minus.png", 32, 32, "*"));
+    this.appendValueInput("SECOND")
+        .setCheck("Number");
+    this.setInputsInline(true);
+    this.setOutput(true, "Number");
+    this.setColour(225);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }

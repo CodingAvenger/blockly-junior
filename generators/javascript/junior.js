@@ -62,10 +62,26 @@ Blockly.JavaScript['end'] = function(block) {
   return code;
 };
 
+
+Blockly.JavaScript['stop'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = "alert('stop');";
+  // TODO: Change ORDER_NONE to the correct strength.
+  return code;
+};
+
+Blockly.JavaScript['repeat'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = "alert('repeat');";
+  // TODO: Change ORDER_NONE to the correct strength.
+  return code;
+};
+
 Blockly.JavaScript['right_r'] = function(block) {
   var value_repeat = Blockly.JavaScript.valueToCode(block, 'REPEAT', Blockly.JavaScript.ORDER_ATOMIC);
   if(value_repeat == "") value_repeat = 1;
   // TODO: Assemble JavaScript into code variable.
+  value_repeat = eval(value_repeat); //in case the text is something like (3+3)
   var code = "";
   for(var i=0; i<value_repeat; i++)
 	  code = code+"alert('right');";
@@ -76,6 +92,7 @@ Blockly.JavaScript['left_r'] = function(block) {
   var value_repeat = Blockly.JavaScript.valueToCode(block, 'REPEAT', Blockly.JavaScript.ORDER_ATOMIC);
   if(value_repeat == "") value_repeat = 1;
   // TODO: Assemble JavaScript into code variable.
+  value_repeat = eval(value_repeat); //in case the text is something like (3+3)
   var code = "";
   for(var i=0; i<value_repeat; i++)
 	  code = code+"alert('left');";
@@ -86,6 +103,7 @@ Blockly.JavaScript['up_r'] = function(block) {
   var value_repeat = Blockly.JavaScript.valueToCode(block, 'REPEAT', Blockly.JavaScript.ORDER_ATOMIC);
   if(value_repeat == "") value_repeat = 1;
   // TODO: Assemble JavaScript into code variable.
+  value_repeat = eval(value_repeat); //in case the text is something like (3+3)
   var code = "";
   for(var i=0; i<value_repeat; i++)
 	  code = code+"alert('up');";
@@ -96,6 +114,7 @@ Blockly.JavaScript['down_r'] = function(block) {
   var value_repeat = Blockly.JavaScript.valueToCode(block, 'REPEAT', Blockly.JavaScript.ORDER_ATOMIC);
   if(value_repeat == "") value_repeat = 1;
   // TODO: Assemble JavaScript into code variable.
+  value_repeat = eval(value_repeat); //in case the text is something like (3+3)
   var code = "";
   for(var i=0; i<value_repeat; i++)
 	  code = code+"alert('down');";
@@ -106,6 +125,7 @@ Blockly.JavaScript['turn_right_r'] = function(block) {
   var value_repeat = Blockly.JavaScript.valueToCode(block, 'REPEAT', Blockly.JavaScript.ORDER_ATOMIC);
   if(value_repeat == "") value_repeat = 1;
   // TODO: Assemble JavaScript into code variable.
+  value_repeat = eval(value_repeat); //in case the text is something like (3+3)
   var code = "";
   for(var i=0; i<value_repeat; i++)
 	  code = code+"alert('turn_right');";
@@ -116,6 +136,7 @@ Blockly.JavaScript['turn_left_r'] = function(block) {
   var value_repeat = Blockly.JavaScript.valueToCode(block, 'REPEAT', Blockly.JavaScript.ORDER_ATOMIC);
   if(value_repeat == "") value_repeat = 1;
   // TODO: Assemble JavaScript into code variable.
+  value_repeat = eval(value_repeat); //in case the text is something like (3+3)
   var code = "";
   for(var i=0; i<value_repeat; i++)
 	  code = code+"alert('left');";
@@ -127,7 +148,7 @@ Blockly.JavaScript['num_1'] = function(block) {
   var code = '1';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['num_2'] = function(block) {
@@ -135,7 +156,7 @@ Blockly.JavaScript['num_2'] = function(block) {
   var code = '2';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['num_3'] = function(block) {
@@ -143,7 +164,7 @@ Blockly.JavaScript['num_3'] = function(block) {
   var code = '3';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['num_4'] = function(block) {
@@ -159,7 +180,7 @@ Blockly.JavaScript['num_5'] = function(block) {
   var code = '5';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['num_6'] = function(block) {
@@ -167,7 +188,7 @@ Blockly.JavaScript['num_6'] = function(block) {
   var code = '6';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['num_7'] = function(block) {
@@ -175,7 +196,7 @@ Blockly.JavaScript['num_7'] = function(block) {
   var code = '7';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['num_8'] = function(block) {
@@ -183,7 +204,7 @@ Blockly.JavaScript['num_8'] = function(block) {
   var code = '8';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['num_9'] = function(block) {
@@ -191,7 +212,7 @@ Blockly.JavaScript['num_9'] = function(block) {
   var code = '9';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['num_10'] = function(block) {
@@ -199,7 +220,7 @@ Blockly.JavaScript['num_10'] = function(block) {
   var code = '10';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['dice_1'] = function(block) {
@@ -207,7 +228,7 @@ Blockly.JavaScript['dice_1'] = function(block) {
   var code = '1';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['dice_2'] = function(block) {
@@ -215,7 +236,7 @@ Blockly.JavaScript['dice_2'] = function(block) {
   var code = '2';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['dice_3'] = function(block) {
@@ -223,7 +244,7 @@ Blockly.JavaScript['dice_3'] = function(block) {
   var code = '3';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['dice_4'] = function(block) {
@@ -231,7 +252,7 @@ Blockly.JavaScript['dice_4'] = function(block) {
   var code = '4';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['dice_5'] = function(block) {
@@ -239,7 +260,7 @@ Blockly.JavaScript['dice_5'] = function(block) {
   var code = '5';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
 Blockly.JavaScript['dice_6'] = function(block) {
@@ -247,5 +268,23 @@ Blockly.JavaScript['dice_6'] = function(block) {
   var code = '6';
   // TODO: Change ORDER_NONE to the correct strength.
   //return [code, Blockly.JavaScript.ORDER_NONE];
-  return code;
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
+};
+
+Blockly.JavaScript['plus'] = function(block) {
+  var value_first = Blockly.JavaScript.valueToCode(block, 'FIRST', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_second = Blockly.JavaScript.valueToCode(block, 'SECOND', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = parseInt(value_first)+parseInt(value_second);
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
+};
+
+Blockly.JavaScript['minus'] = function(block) {
+  var value_first = Blockly.JavaScript.valueToCode(block, 'FIRST', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_second = Blockly.JavaScript.valueToCode(block, 'SECOND', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = parseInt(value_first)-parseInt(value_second);
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
