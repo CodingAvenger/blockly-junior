@@ -423,7 +423,8 @@ Code.init = function() {
     Code.bindClick('tab_' + name,
         function(name_) {return function() {Code.tabClick(name_);};}(name));
   }
-
+      Blockly.Xml.domToWorkspace(Code.workspace,
+        document.getElementById('startBlocks'));
   // Lazy-load the syntax-highlighting.
   window.setTimeout(Code.importPrettify, 1);
 };
