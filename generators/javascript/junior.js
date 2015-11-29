@@ -288,3 +288,16 @@ Blockly.JavaScript['minus'] = function(block) {
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
+
+Blockly.JavaScript['repeat_loop'] = function(block) {
+  var value_times = Blockly.JavaScript.valueToCode(block, 'TIMES', Blockly.JavaScript.ORDER_ATOMIC);
+  var statements_do = Blockly.JavaScript.statementToCode(block, 'DO');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '';
+  for(var i=0; i<value_times; i++)
+  {
+	  code = code+statements_do;
+  }
+  return code;
+};
+

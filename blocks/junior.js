@@ -418,5 +418,19 @@ Blockly.Blocks['minus'] = {
   }
 };
 
-
+Blockly.Blocks['repeat_loop'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField(new Blockly.FieldImage("../../img/jr_repeat.png", 32, 32, "*"));
+    this.appendValueInput("TIMES")
+        .setCheck("Number");
+    this.appendStatementInput("DO");
+    this.setInputsInline(true);
+    this.setPreviousStatement(true);
+    this.setNextStatement(true);
+    this.setColour(30);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
 

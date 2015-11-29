@@ -116,6 +116,15 @@
         <block type="plus"></block>
         <block type="minus"></block>
     </category>
+    <category name="Loops">
+        <block type="repeat_loop">
+			<value name="TIMES">
+				<shadow type="dice_4"></block>
+			</value> 
+		</block>
+
+    </category>
+<category name="Advanced">
      <category id="catLogic" colour="210">
       <block type="controls_if"></block>
       <block type="logic_compare"></block>
@@ -414,10 +423,10 @@
       </block>
     </category>
 
-
     <sep></sep>
     <category id="catVariables" colour="330" custom="VARIABLE"></category>
     <category id="catFunctions" colour="290" custom="PROCEDURE"></category>
+</category>
   </xml>
 
   
@@ -474,7 +483,7 @@
       </block>
     </next>
   </block>
-  <block type="green_flag" x="313" y="38">
+  <block type="green_flag" x="338" y="38">
     <next>
       <block type="right_r">
         <value name="REPEAT">
@@ -489,31 +498,15 @@
         </value>
         <next>
           <block type="turn_right_r">
-		  <value name="REPEAT">
-                      <shadow type="dice_1">
-                        <field name="NUM">1</field>
-                      </shadow>
-
-                    </value>
             <next>
-              <block type="right_r">
-                <value name="REPEAT">
-                  <block type="math_arithmetic">
-                    <field name="OP">MINUS</field>
-                    <value name="A">
-                      <shadow type="math_number">
-                        <field name="NUM">1</field>
-                      </shadow>
-                      <block type="num_5"></block>
-                    </value>
-                    <value name="B">
-                      <shadow type="math_number">
-                        <field name="NUM">1</field>
-                      </shadow>
-                      <block type="num_3"></block>
-                    </value>
-                  </block>
+              <block type="repeat_loop">
+                <value name="TIMES">
+                  <shadow type="dice_4"></shadow>
+                  <block type="dice_2"></block>
                 </value>
+                <statement name="DO">
+                  <block type="right_r"></block>
+                </statement>
                 <next>
                   <block type="end"></block>
                 </next>
