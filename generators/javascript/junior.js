@@ -201,3 +201,51 @@ Blockly.JavaScript['num_10'] = function(block) {
   //return [code, Blockly.JavaScript.ORDER_NONE];
   return code;
 };
+
+Blockly.JavaScript['dice_1'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = '1';
+  // TODO: Change ORDER_NONE to the correct strength.
+  //return [code, Blockly.JavaScript.ORDER_NONE];
+  return code;
+};
+
+Blockly.JavaScript['dice_2'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = '2';
+  // TODO: Change ORDER_NONE to the correct strength.
+  //return [code, Blockly.JavaScript.ORDER_NONE];
+  return code;
+};
+
+Blockly.JavaScript['dice_3'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = '3';
+  // TODO: Change ORDER_NONE to the correct strength.
+  //return [code, Blockly.JavaScript.ORDER_NONE];
+  return code;
+};
+
+Blockly.JavaScript['dice_4'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = '4';
+  // TODO: Change ORDER_NONE to the correct strength.
+  //return [code, Blockly.JavaScript.ORDER_NONE];
+  return code;
+};
+
+Blockly.JavaScript['dice_5'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = '5';
+  // TODO: Change ORDER_NONE to the correct strength.
+  //return [code, Blockly.JavaScript.ORDER_NONE];
+  return code;
+};
+
+Blockly.JavaScript['dice_6'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = '6';
+  // TODO: Change ORDER_NONE to the correct strength.
+  //return [code, Blockly.JavaScript.ORDER_NONE];
+  return code;
+};

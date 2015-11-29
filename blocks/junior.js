@@ -187,7 +187,7 @@ Blockly.Blocks['num_1'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("1");
-    this.setOutput(true);
+    this.setOutput(true, "Number");
     this.setColour(270);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
@@ -198,7 +198,7 @@ Blockly.Blocks['num_2'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("2");
-    this.setOutput(true);
+    this.setOutput(true, "Number");
     this.setColour(270);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
@@ -209,7 +209,7 @@ Blockly.Blocks['num_3'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("3");
-    this.setOutput(true);
+    this.setOutput(true, "Number");
     this.setColour(270);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
@@ -220,7 +220,7 @@ Blockly.Blocks['num_4'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("4");
-    this.setOutput(true);
+    this.setOutput(true, "Number");
     this.setColour(270);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
@@ -231,7 +231,7 @@ Blockly.Blocks['num_5'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("5");
-    this.setOutput(true);
+    this.setOutput(true, "Number");
     this.setColour(270);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
@@ -242,7 +242,7 @@ Blockly.Blocks['num_6'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("6");
-    this.setOutput(true);
+    this.setOutput(true, "Number");
     this.setColour(270);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
@@ -253,7 +253,7 @@ Blockly.Blocks['num_7'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("7");
-    this.setOutput(true);
+    this.setOutput(true, "Number");
     this.setColour(270);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
@@ -264,7 +264,7 @@ Blockly.Blocks['num_8'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("8");
-    this.setOutput(true);
+    this.setOutput(true, "Number");
     this.setColour(270);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
@@ -275,7 +275,7 @@ Blockly.Blocks['num_9'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("9");
-    this.setOutput(true);
+    this.setOutput(true, "Number");
     this.setColour(270);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
@@ -286,9 +286,84 @@ Blockly.Blocks['num_10'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("10");
-    this.setOutput(true);
+    this.setOutput(true, "Number");
     this.setColour(270);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
 };
+
+Blockly.Blocks['dice_1'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("../../img/jr-dice-1.png", 32, 32, "1"));
+    this.setOutput(true, "Number");
+    this.setColour(270);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
+
+Blockly.Blocks['dice_2'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("../../img/jr-dice-2.png", 32, 32, "1"));
+    this.setOutput(true, "Number");
+    this.setColour(270);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
+
+Blockly.Blocks['dice_3'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("../../img/jr-dice-3.png", 32, 32, "1"));
+    this.setOutput(true, "Number");
+    this.setColour(270);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
+
+Blockly.Blocks['dice_4'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("../../img/jr-dice-4.png", 32, 32, "1"));
+    this.setOutput(true, "Number");
+    this.setColour(270);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
+
+Blockly.Blocks['dice_5'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("../../img/jr-dice-5.png", 32, 32, "1"));
+    this.setOutput(true, "Number");
+    this.setColour(270);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
+
+Blockly.Blocks['dice_6'] = {
+  init: function() {
+    this.appendDummyInput()
+        .setAlign(Blockly.ALIGN_CENTRE)
+        .appendField(new Blockly.FieldImage("../../img/jr-dice-6.png", 32, 32, "1"));
+    this.setOutput(true, "Number");
+    this.setColour(270);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
+
+
+
