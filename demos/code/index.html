@@ -13,12 +13,14 @@
   <script src="../../php_compressed.js"></script>
   <script src="../../dart_compressed.js"></script>
   <script src="code.js"></script>
+  <script src="../../blocks/junior.js"></script>
+  <script src="../../generators/javascript/junior.js"></script>
 </head>
 <body>
   <table width="100%" height="100%">
     <tr>
       <td>
-        <h1><a href="https://developers.google.com/blockly/">Blockly</a>&rlm; &gt;
+        <h1><a href="../../index.html">Blockly Junior</a>&rlm; &gt;
           <a href="../index.html">Demos</a>&rlm; &gt;
           <span id="title">...</span>
         </h1>
@@ -70,6 +72,44 @@
   <textarea id="content_xml" class="content" wrap="off"></textarea>
 
   <xml id="toolbox" style="display: none">
+    <category name="Junior">
+        <block type="green_flag"></block>
+        <block type="right"></block>
+        <block type="left"></block>
+        <block type="up"></block>
+        <block type="down"></block>
+        <block type="turn_right"></block>
+        <block type="turn_left"></block>
+        <block type="end"></block>
+    </category>
+    <category name="Junior Repeat">
+        <block type="right_r"></block>
+        <block type="left_r"></block>
+        <block type="up_r"></block>
+        <block type="down_r"></block>
+        <block type="turn_right_r"></block>
+        <block type="turn_left_r"></block>
+    </category>
+    <category name="Numbers (dice)">
+        <block type="dice_1"></block>
+        <block type="dice_2"></block>
+        <block type="dice_3"></block>
+        <block type="dice_4"></block>
+        <block type="dice_5"></block>
+        <block type="dice_6"></block>
+    </category>
+    <category name="Numbers">
+        <block type="num_1"></block>
+        <block type="num_2"></block>
+        <block type="num_3"></block>
+        <block type="num_4"></block>
+        <block type="num_5"></block>
+        <block type="num_6"></block>
+        <block type="num_7"></block>
+        <block type="num_8"></block>
+        <block type="num_9"></block>
+        <block type="num_10"></block>
+    </category>
     <category id="catLogic" colour="210">
       <block type="controls_if"></block>
       <block type="logic_compare"></block>
@@ -367,6 +407,8 @@
         </value>
       </block>
     </category>
+
+
     <sep></sep>
     <category id="catVariables" colour="330" custom="VARIABLE"></category>
     <category id="catFunctions" colour="290" custom="PROCEDURE"></category>
