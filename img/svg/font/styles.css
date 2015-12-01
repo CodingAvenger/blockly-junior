@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "blocklyjr";
+  src:url("fonts/blocklyjr.eot");
+  src:url("fonts/blocklyjr.eot?#iefix") format("embedded-opentype"),
+    url("fonts/blocklyjr.woff") format("woff"),
+    url("fonts/blocklyjr.ttf") format("truetype"),
+    url("fonts/blocklyjr.svg#blocklyjr") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "blocklyjr" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "blocklyjr" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-:before {
+  content: "\2d";
+}
+.icon--1:before {
+  content: "\2b";
+}
+.icon-0:before {
+  content: "\30";
+}
+.icon-1:before {
+  content: "\31";
+}
+.icon-2:before {
+  content: "\32";
+}
+.icon-3:before {
+  content: "\33";
+}
+.icon-4:before {
+  content: "\34";
+}
+.icon-5:before {
+  content: "\35";
+}
+.icon-6:before {
+  content: "\36";
+}
+.icon-asterisc:before {
+  content: "\2a";
+}
+.icon-clockwise:before {
+  content: "\67";
+}
+.icon-counterclockwise:before {
+  content: "\61";
+}
+.icon-divisin:before {
+  content: "\2f";
+}
+.icon-down:before {
+  content: "\78";
+}
+.icon-envelope:before {
+  content: "\79";
+}
+.icon-flag:before {
+  content: "\71";
+}
+.icon-left:before {
+  content: "\73";
+}
+.icon-repeat:before {
+  content: "\62";
+}
+.icon-right:before {
+  content: "\66";
+}
+.icon-stop:before {
+  content: "\64";
+}
+.icon-stop-fill:before {
+  content: "\6b";
+}
+.icon-up:before {
+  content: "\65";
+}
+.icon-envelope-open-1:before {
+  content: "\75";
+}
